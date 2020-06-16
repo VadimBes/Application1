@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.art_int_labs.lead_up.ui.Main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" />
+    <fragment
+        android:id="@+id/knowledgeFragment"
+        android:name="com.art_int_labs.lead_up.ui.Knowledge.KnowledgeFragment"
+        android:label="knowledge_fragment"
+        tools:layout="@layout/knowledge_fragment" >
+        <action
+            android:id="@+id/action_knowledge"
+            app:destination="@id/knowleggeDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/courseFragment"
+        android:name="com.art_int_labs.lead_up.ui.Course.CourseFragment"
+        android:label="course_fragment"
+        tools:layout="@layout/course_fragment" >
+        <action
+            android:id="@+id/actionDetail"
+            app:destination="@id/courseDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/achivmentsFragment"
+        android:name="com.art_int_labs.lead_up.ui.Achivments.AchivmentsFragment"
+        android:label="achivments_fragment"
+        tools:layout="@layout/achivments_fragment" />
+    <fragment
+        android:id="@+id/courseDetailFragment"
+        android:name="com.art_int_labs.lead_up.ui.Course.detail.CourseDetailFragment"
+        android:label="course_detail_item"
+        tools:layout="@layout/course_detail_item" >
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <argument
+            android:name="header"
+            app:argType="string" />
+        <argument
+            android:name="picture"
+            app:argType="string" />
+        <action
+            android:id="@+id/actionDetail"
+            app:destination="@id/lessonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/knowleggeDetailFragment"
+        android:name="com.art_int_labs.lead_up.ui.Knowledge.detail.KnowlegeDetailFragment"
+        android:label="knowlegge_detail_fragment"
+        tools:layout="@layout/knowlegge_detail_fragment" >
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_product"
+            app:destination="@id/productFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.art_int_labs.lead_up.ui.Knowledge.detail.product.ProductFragment"
+        android:label="product_fragment"
+        tools:layout="@layout/product_fragment" >
+        <argument
+            android:name="header"
+            app:argType="string" />
+        <argument
+            android:name="long_text"
+            app:argType="string" />
+        <argument
+            android:name="picture"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/lessonFragment"
+        android:name="com.art_int_labs.lead_up.ui.Course.detail.lesson.LessonFragment"
+        android:label="LessonFragment" >
+        <argument
+            android:name="info"
+            app:argType="string" />
+        <argument
+            android:name="video"
+            app:argType="string" />
+    </fragment>
+</navigation>

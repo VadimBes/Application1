@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Lead_UP</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="account"><u>I don\'t have any account</u></string>
+    <string name="passwordAgain">Password again</string>
+    <string name="terms">Accept Terms of Service</string>
+    <string name="help_info_course">О курсе</string>
+    <string name="course_item_les_text">уроков</string>
+    <string name="course_item_balls_info">баллов за курс</string>
+    <string name="knowledge_for_replacement">__________________________________________________________________________</string>
+    <string name="news">Новости</string>
+    <string name="course">Предлагаемые курсы</string>
+    <string name="for_delete_news">Something I Can Understand</string>
+    <string name="product_info_know">О товаре</string>
+</resources>

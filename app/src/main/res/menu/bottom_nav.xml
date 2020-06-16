@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mainFragment"
+        android:title="Главная"
+        android:icon="@drawable/star"/>
+
+    <item
+        android:title="Курсы"
+        android:id="@+id/courseFragment"
+        android:icon="@drawable/courses"/>
+
+    <item
+        android:title="Знания"
+        android:id="@+id/knowledgeFragment"
+        android:icon="@drawable/book"/>
+
+    <item
+        android:id="@+id/achivmentsFragment"
+        android:icon="@drawable/medal"
+        android:title="Достижения">
+    </item>
+
+</menu>
